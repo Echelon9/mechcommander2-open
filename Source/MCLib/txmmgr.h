@@ -135,7 +135,7 @@ typedef struct _MC_TextureNode
 		hints = gosHint_DisableMipmap;
 		width = 0;
 		uniqueInstance = 0x0;
-		neverFLUSH = false;
+		neverFLUSH = 0;
 		vertexData = NULL;
 		vertexData2 = NULL;
 		vertexData3 = NULL;

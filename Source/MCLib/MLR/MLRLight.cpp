@@ -97,7 +97,7 @@ MLRLight::MLRLight(
 	color = RGBColor(0.0f, 0.0f, 0.0f);
 	page->GetEntry("Color", &color);
 
-	LinearMatrix4D matrix(true);
+	LinearMatrix4D matrix = LinearMatrix4D::Identity;
 	Point3D position = Point3D::Identity;
 	page->GetEntry("Position", &position);
 	matrix.BuildTranslation(position);
