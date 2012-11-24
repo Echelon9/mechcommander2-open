@@ -2306,10 +2306,11 @@ int MechLabScreen::addComponentListFromDrag( LogisticsComponent* pComponent )
 
 	int retVal = -1;
 
-	if ( pComponent )
-		//LogisticsData::instance->addComponentToInventory( pComponent ); //M9 OK
+	if ( pComponent ) {
 		componentListBox.addIComponent( pComponent );
 		componentListBox.reType();
+	}
+
 	updateDiagram();
 
 	return retVal;

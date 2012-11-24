@@ -967,10 +967,10 @@ int ComponentPurchaseScreen::addComponentListFromDrag( LogisticsComponent* pComp
 
 	int retVal = -1;
 
-	if ( pComponent )
+	if ( pComponent ) {
 		purcomponentListBox.addIComponent( pComponent );
 		purcomponentListBox.reType();
-//	updateDiagram();
+	}
 
 	return retVal;
 
