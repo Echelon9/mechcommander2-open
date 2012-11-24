@@ -1091,7 +1091,7 @@ int	LogisticsSaveDialog::handleMessage( unsigned long what, unsigned long who )
 		 }
 		}
 
-		 if ( (!bFound || bLoad)  )
+		 if ( !bFound || bLoad  )
 		 {
 			status = YES;
 			bPromptOverwrite = 0;
