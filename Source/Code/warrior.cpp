@@ -6041,7 +6041,9 @@ long MechWarrior::orderMoveToPoint (bool unitOrder, bool setTacOrder, long origi
 	if (setTacOrder && (origin == ORDER_ORIGIN_PLAYER))
 		if (!unitOrder || (getPoint() == getVehicle()))
 			moveParams |= MOVEPARAM_RADIO_RESULT;
-		PathManager->request(this, selectionIndex, moveParams, setTacOrder ? 21 : 23);
+	
+	PathManager->request(this, selectionIndex, moveParams, setTacOrder ? 21 : 23);
+	
 	if (setTacOrder && (result == TACORDER_FAILURE) && (origin == ORDER_ORIGIN_COMMANDER))
 		setGeneralTacOrder(tacOrder);
 
