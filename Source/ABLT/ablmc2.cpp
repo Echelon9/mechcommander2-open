@@ -6592,7 +6592,7 @@ long ablFileCreateCB (void** file, char* fName) {
 long ablFileOpenCB (void** file, char* fName) {
 
 	//Filenames MUST be all lowercase or Hash won't find 'em!
-	for (long i=0;i<strlen(fName);i++)
+	for (size_t i=0;i<strlen(fName);i++)
 		fName[i] = tolower(fName[i]);
 	*file = fopen(fName, "r");
 	if (*file == NULL) {
