@@ -16,6 +16,9 @@
 [Tt]humbs.db
 *.DS_Store
 
+#Documentation output
+Docs/doxygen/html
+
 #Visual Studio files
 *.[Oo]bj
 *.user
