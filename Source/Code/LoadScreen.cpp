@@ -540,9 +540,6 @@ void ProgressTimer(	RECT& WinRect,DDSURFACEDESC2& mouseSurfaceDesc )
 
 	if ( loadProgress > 0 && loadProgress < 100 )
 	{
-		destX = 0;
-		destY = 0;
-
 		long destWidth = LoadScreen::progressBackground->width;
 		long destHeight = LoadScreen::progressBackground->height;
 

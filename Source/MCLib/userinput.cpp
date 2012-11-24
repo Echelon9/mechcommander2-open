@@ -246,7 +246,6 @@ void UserInput::update (void)
 
 	else if (gos_GetKeyStatus( KEY_LMOUSE ) == KEY_HELD /*code & 0x8000*/) // held
 	{
-		mouseLeftUpTime = 5.0;
 		//-----------------------------------------------------------------------
 		// Down and still down should indicate dragging.  Check threshold of 
 		// Deltas to see if this is TRUE IF AND ONLY IF we are NOT yet DRAGGING!
