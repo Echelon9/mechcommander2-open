@@ -570,7 +570,7 @@ long TG_TypeMultiShape::LoadTGMultiShapeFromASE (char *fileName, bool forceMakeB
 				//-------------------------------------------------------------------------------
 				// Get and store texture Name.  Will need multiple for Multi-Sub if implemented
 				char textId[256];
-				sprintf(textId,"%s",ASE_MATERIAL_BITMAP_ID,i);
+				sprintf(textId,"%s%d",ASE_MATERIAL_BITMAP_ID,i);
 		
 				char *txmTemp = txmData;
 				txmData = strstr(txmData,textId);

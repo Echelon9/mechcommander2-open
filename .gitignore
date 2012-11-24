@@ -41,6 +41,7 @@ Docs/doxygen/html
 *.opensdf
 *.unsuccessfulbuild
 Build/ipch/
+Build/*.tli
 obj/
 [Bb]in
 Build/[Dd]ebug*/
