@@ -1,0 +1,102 @@
+MCO ver 0.030 (28012011 - magic)
+
+corrected objectchangesides abl command for use in mission.abl
+
+syntax:
+objectchangesides(buildingPartID, teamID);
+
+buildingPartID - from the editor
+teamID - (0,2 player; 1,3,... enemy)
+
+effect: change building side.
+BUILDINGS ONLY
+*****************************************************************
+MCO ver 0.031 (29012011 - magic)
+
+changed objectchangesides abl command for use in mission.abl
+
+syntax:
+objectchangesides(PartID, teamID);
+
+PartID - number from the editor for buildings, part id for mover (getunitmates(squadID)) from squad ID.
+teamID - (0,2 player; 1,3,... enemy)
+
+effect: change object side.
+works for MECHS, VEHICLES and BUILDINGS
+*****************************************************************
+MCO ver 0.032 (29012011 - magic)
+
+NEW ABL command:
+addmovertoplayer(PartID, teamID, commanderID);
+
+PartID - number from the editor for buildings, part id for mover (getunitmates(squadID)) from squad ID.
+teamID - (0,2 player; 1,3,... enemy)
+commanderID = 0, player is 0 for Single player. Here for possible future multiplayer.
+
+Effect: switch enemy mech or vehicle to player and add that unit to player roster.
+*****************************************************************
+MCO ver 0.033 (29012011 - magic)
+
+fixed sort player roster on add new unit.
+*****************************************************************
+MCO ver 0.034 (29012011 - magic finished before, included now)
+
+Changed laoding files for pilot icons for logistics and mission.
+new loading files:
+pilots_l2.tga and pilots_med.tga for logistics,
+pilots_high.tga for mission.
+
+changed module mechIcon.cpp to load in mission pilot icons from pilots_high.
+*****************************************************************
+MCO ver 0.035 (05022011 - magic)
+
+All 4 weapon nodes for turrets are now active.
+*****************************************************************
+MCO ver 0.036 (07022011 - magic)
+
+corected pilot icons load for pilot review area
+added file:
+pilots_med.tga
+*****************************************************************
+MCO ver 0.037 (09022011 - magic)
+
+small fix on pilot roster sort
+*****************************************************************
+MCO ver 0.038 (12022011 - magic)
+
+Object texture resolution changed to 256x256
+*****************************************************************
+MCO ver 0.039 (16022011 - magic)
+
+3 wide resolutions supported; 1920x1200, 1680x1050 and 1440x900.
+Text maessage box size will automatically change with resolution.
+*****************************************************************
+MCO ver 0.040 (17022011 - magic)
+
+Camera angle reduced for high altitude (zoom out) to prevent zoomout crushes.
+*****************************************************************
+MCO ver 0.041 (19022011 - magic)
+
+Camera angles are free again. Reduced number of buildings and trees for rendering
+by distance from camera. Shadows will not render if distance from camera is > 2000.
+*****************************************************************
+MCO ver 0.042 (23022011 - magic)
+
+New maps 140x140, 160x160, 180x180 and 200x200
+*****************************************************************
+MCO ver 0.043 (25022011 - magic)
+
+Turrets and gates are free of object2
+Starmans AC, LargeLaser, LRM and Calliope turrets included
+*****************************************************************
+MCO ver 0.044 (26022011 - magic)
+
+General rebuild, I bumped something I shouldnt have so it produced a bug, fixed now.
+*****************************************************************
+MCO ver 0.045 (27022011 - magic)
+
+More skys added to editor up to 36.
+*****************************************************************
+MCO ver 0.046 (28022011 - magic)
+
+More menu options for objects in editor

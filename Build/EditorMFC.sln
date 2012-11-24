@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EditorMFC", "EditorMFC.vcxproj", "{61FF0D0E-7063-4843-A009-A764F7AD72D4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Editores", "Editores.vcxproj", "{8519AE9D-BC04-4FC5-B492-D584416A6CDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Profile|Win32 = Profile|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61FF0D0E-7063-4843-A009-A764F7AD72D4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{61FF0D0E-7063-4843-A009-A764F7AD72D4}.Debug|Win32.Build.0 = Debug|Win32
+		{61FF0D0E-7063-4843-A009-A764F7AD72D4}.Profile|Win32.ActiveCfg = Profile|Win32
+		{61FF0D0E-7063-4843-A009-A764F7AD72D4}.Profile|Win32.Build.0 = Profile|Win32
+		{61FF0D0E-7063-4843-A009-A764F7AD72D4}.Release|Win32.ActiveCfg = Release|Win32
+		{61FF0D0E-7063-4843-A009-A764F7AD72D4}.Release|Win32.Build.0 = Release|Win32
+		{8519AE9D-BC04-4FC5-B492-D584416A6CDE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8519AE9D-BC04-4FC5-B492-D584416A6CDE}.Debug|Win32.Build.0 = Debug|Win32
+		{8519AE9D-BC04-4FC5-B492-D584416A6CDE}.Profile|Win32.ActiveCfg = Profile|Win32
+		{8519AE9D-BC04-4FC5-B492-D584416A6CDE}.Profile|Win32.Build.0 = Profile|Win32
+		{8519AE9D-BC04-4FC5-B492-D584416A6CDE}.Release|Win32.ActiveCfg = Release|Win32
+		{8519AE9D-BC04-4FC5-B492-D584416A6CDE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

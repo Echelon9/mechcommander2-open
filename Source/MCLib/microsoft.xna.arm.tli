@@ -1,0 +1,63 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (de897043).
+//
+// c:\documents and settings\echelon9\desktop\mco\latest mco\source\mclib\microsoft.xna.arm.tli
+//
+// Wrapper implementations for Win32 type library Microsoft.Xna.Arm.tlb
+// compiler-generated file created 11/20/12 at 00:49:20 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IProviderRelationship wrapper method implementations
+//
+
+inline HRESULT IProviderRelationship::AddProperty ( _bstr_t name, _bstr_t value ) {
+    HRESULT _hr = raw_AddProperty(name, value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IProviderAsset wrapper method implementations
+//
+
+inline HRESULT IProviderAsset::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProviderAsset::AddProperty ( _bstr_t name, _bstr_t value ) {
+    HRESULT _hr = raw_AddProperty(name, value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IProviderRelationshipPtr IProviderAsset::AddRelationship ( _bstr_t type, _bstr_t targetAsset ) {
+    struct IProviderRelationship * _result = 0;
+    HRESULT _hr = raw_AddRelationship(type, targetAsset, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IProviderRelationshipPtr(_result, false);
+}
+
+//
+// interface IProviderEngine wrapper method implementations
+//
+
+inline IProviderAssetPtr IProviderEngine::OpenAsset ( _bstr_t assetName, enum AssetType AssetType, enum ProviderType ProviderType ) {
+    struct IProviderAsset * _result = 0;
+    HRESULT _hr = raw_OpenAsset(assetName, AssetType, ProviderType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IProviderAssetPtr(_result, false);
+}
+
+//
+// interface IComFactory wrapper method implementations
+//
+
+inline IProviderEnginePtr IComFactory::Create ( _bstr_t toolName, _bstr_t toolVersion ) {
+    struct IProviderEngine * _result = 0;
+    HRESULT _hr = raw_Create(toolName, toolVersion, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IProviderEnginePtr(_result, false);
+}

@@ -1,0 +1,166 @@
+#ifndef MECHLABSCREEN_H
+#define MECHLABSCREEN_H
+/*************************************************************************************************\
+MechLabScreen.h			: Interface for the MechLabScreen component.
+//---------------------------------------------------------------------------//
+// Copyright (C) Microsoft Corporation. All rights reserved.                 //
+//===========================================================================//
+\*************************************************************************************************/
+
+#ifndef LOGISTICSSCREEN_H
+#include "LogisticsScreen.h"
+#endif
+
+#ifndef ATTRIBUTEMETER_H
+#include "AttributeMeter.h"
+#endif
+
+#ifndef COMPONENTLISTBOX_H
+#include "ComponentListBox.h"
+#endif
+
+#ifndef SIMPLECAMERA_H
+#include "SimpleCamera.h"
+#endif
+
+#define MECH_LAB_ATTRIBUTE_METER_COUNT	9
+class FitIniFile;
+class LogisticsVariant;
+class LogisticsComponent;
+class LogisticsVariantDialog;
+class LogisticsAcceptVariantDialog;
+class LogisticsMech; //magic 12052012
+//*************************************************************************************************
+
+/**************************************************************************************************
+CLASS DESCRIPTION
+MechLabScreen:
+**************************************************************************************************/
+class MechLabScreen: public LogisticsScreen
+{
+	public:
+
+		MechLabScreen();
+		virtual ~MechLabScreen();
+
+		int init( FitIniFile& );
+
+		virtual void begin();
+		virtual void end();
+		virtual void update();
+		virtual void render(int xOffset, int yOffset);
+
+		virtual int	handleMessage( unsigned long, unsigned long );
+
+		void	setComponent( LogisticsComponent* pComponent, bool bMessageFromLB = 0 );
+		int		addComponent( LogisticsComponent* pComponent, long& x, long& y );
+		void	beginDrag( LogisticsComponent* pComponent );
+		void	endDrag( );
+
+		int		canAddComponent( LogisticsComponent* pComponent );
+
+		static MechLabScreen* instance() { return s_instance;}
+
+		bool canRemoveComponent( LogisticsComponent* pComp );
+		void setDragFromList( bool dfl ); //Magic
+		void removeComponentToDrag( long i, long j ); //Magic
+		int addComponentFromDrag( LogisticsComponent* pComponent, long& x, long& y ); //Magic
+		void removeComponentListToDrag(LogisticsComponent* pComponent); //Magic
+		int addComponentListFromDrag( LogisticsComponent* pComponent ); //Magic
+		//void getCinventory( LogisticsComponent** pComp, int& maxCount ); //Magic
+		//void	buttonAddPressed( bool p1 );//Magic
+
+	private:
+
+		MechLabScreen( const MechLabScreen& src );
+		MechLabScreen& operator=( const MechLabScreen& echLabScreen );
+		static MechLabScreen*	s_instance;
+		
+		static LogisticsVariantDialog* saveDlg;
+		static LogisticsAcceptVariantDialog* acceptDlg;
+
+		LogisticsVariantDialog*			pCurDialog;
+
+		//LogisticsVariant*	pVariant; //magic 12052012 disabled changed to logistics mech
+		LogisticsMech * cMech; //magic 12052012
+		LogisticsComponent*	pSelectedComponent;
+		long				selI;
+		long				selJ;
+		long				dragX; //M
+		long				dragY; //M
+
+		ComponentIconListBox	componentListBox;
+		aComboBox				variantList;
+
+		AttributeMeter attributeMeters[MECH_LAB_ATTRIBUTE_METER_COUNT];
+
+		//aObject				componentIcons[128];
+		aObject				componentIcons[256]; //magic 17022012
+		long				componentCount;
+
+		aObject				payloadIcon;
+
+		aObject				dragIcon;
+
+		LogisticsComponent*	pDragComponent;
+		LogisticsComponent*	pCurComponent;
+
+		void showJumpJetItems( bool bShow );
+
+		void updateDiagram();
+
+		float originalCost;
+
+		aObject				selRects[2][5];
+		aObject				selJumpJetRect;
+		aObject*			selRect;
+		
+		bool				bSaveDlg;
+		bool				bDragLeft ;
+		bool				bDragFromList; //Magic
+		bool				bDragFromMech; //Magic
+
+		SimpleCamera		camera;
+
+		EString				varName;
+
+		static				GUI_RECT	sensorRects[4];
+		static				long		sensorHelpIDs[4];
+
+		float				countDownTime;
+		float				curCount;
+		float				previousAmount;
+		float				oldCBillsAmount;
+		float				costOfChange; //magic 19122010
+
+		float				oldHeat;
+		float				heatTime;
+		bool				flashHeatRange;
+
+		float				oldArmor;
+		float				newArmor;
+		float				armorTime;
+
+		bool				bErrorDlg;
+
+
+		// HELPER FUNCTIONS
+		void getMouseDiagramCoords( long& x, long& y );
+		void getMouseDiagramCoords( long screenX, long screenY, long& x, long& y );
+
+		void	diagramToScreen( long i, long j, long& x, long& y  );
+		int		selectFirstDiagramComponent();
+		int		selectFirstLBComponent(); 
+		void	updateDiagramInput();
+		void	swapVariant();
+		void	updateHeatMeter();
+		void	updateArmorMeter();
+		void	removeComponent( long i, long j );
+
+
+
+};
+
+
+//*************************************************************************************************
+#endif  // end of file ( MechLabScreen.h )

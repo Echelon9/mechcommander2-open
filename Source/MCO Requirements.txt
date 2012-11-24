@@ -1,0 +1,147 @@
+PROGRAM REQUIREMENTS
+This is a stand alone game: install this in its own folder. Also, you will need Microsoft Visual C++ 2010 (x86) redistributable which can be obtained from Microsoft directly at:
+(http://www.microsoft.com/downloads/details.aspx?familyid=A7B7A05E-6DE6-4D3A-A423-37BF0912DB84)
+ and
+If you want to use the editor, you will have to also install the XNA build for the editor (extract xna build and don't dbl click XNABuildSetup.exe. Dbl click XNA Build System.msi.
+It will install and report an error in the end about something missing. Just finish the install and it will be OK.
+(http://www.microsoft.com/downloads/en/details.aspx?familyid=868fe562-5ded-4bb1-8648-708d3481bda3&displaylang=en)
+
+
+What's new in Mech Commander Omnitech?
+
+- Components inventory is back, just like in old MCG.
+- No more unlimited purchase for mechs.
+- Mission is too difficult and you have a lot of cbills, no problem, buy additional drop weight (5t - 10000cb), as much as you can afford.
+- New save game file format.
+- Component purchase.
+- Component purchase screen.
+- Sensor and jumping skills added to pilots like in mcg.
+- Pilot promotion screen and pilot review area changed.
+- Pilots get experience for those skills.
+- New calc system for ranks.
+- Sensor message when pilot has new sensor contact.
+- Jump facing jump direction fixed. 
+- Skill try for sensors and jumping based on current sensor and jumping skill value.
+- Fall when failed jump skill.
+- New resolution 1920x1080.
+- Sensor specialty skill and Jump specialty skill are now obsolete.
+- 4 existing sensor levels are based on sensor skill value.
+- Jump distance reduced for heavier mechs, more tons - lesser jump distance.
+- Unit roster is no longer sorted; you can change as you wish. That way you can shift damaged units back in formation and put undamaged in front.
+- 6 formations available for now. Formation key is "K", press to cycle through formations.
+- Mechs are free of object2.pak (object numbers start is at 1200).
+- Number of polygons limit tripled. 
+- A modification of rollins message box implemented.
+- All vehicles are free from object2.pak (object numbers start is at 2000).
+- All buildings can be free from object2 (object numbers start is at 2500, original buildings will be left in object2)
+- Set of Rollins buildings.
+- Starman's Mech Hangar.
+- 5 new mechs (Fafnir and Lupus by Karl, Intruder and Thug by magic and MadCat MkII by MCO team).
+- Number of potential abl commands doubled (was 256, now 512).
+- Modified rollins message box added and accessible as abl command (for use in main mission abl file):
+
+setTextMsg(0,"PROBE",10);
+
+first parameter can be 0 or 1. 
+0 - instant message for the duration of number of seconds (10),
+1 - rollins message box with press enter to continue, in this case third parameter is not important.
+
+Second parameter is text message. It should have no limit because it passes a pointer to string to underlying function.
+
+Third is a number of seconds to display a message in case first is set to 0.
+
+- Modified Mech purchase screen. New mech purchase simplified to the maximum, no memory consumption at all.
+
+-changed objectchangesides abl command for use in mission.abl
+
+syntax:
+objectchangesides(PartID, teamID);
+
+PartID - number from the editor for buildings, part id for mover (getunitmates(squadID)) from squad ID.
+teamID - (0,2 player; 1,3,... enemy)
+
+effect: change object side.
+works for MECHS, VEHICLES and BUILDINGS
+
+- NEW ABL command:
+addmovertoplayer(PartID, teamID, commanderID);
+
+PartID - part id for mover (getunitmates(squadID)) from squad ID.
+teamID - (0,2 player; 1,3,... enemy)
+commanderID = 0, player is 0 for Single player. Here for possible future multiplayer.
+
+Effect: switch enemy mech or vehicle to player and add that unit to player roster.
+
+- Changed the way of loading pilot icons.
+- 6 NEW (not replacement NEW) pilots from MCG: Vixen, Scarab, Hunter, Beast, Mystique, Hitman. Thanks to ThorC.
+- Activated ALL 4 weapon nodes for turrets.
+- Max object texture resolution changed to 256x256.
+- 3 wide resolutions supported; 1920x1200, 1680x1050 and 1440x900.
+- reduced number of buildings and trees that can be rendered by the distance from camera.
+- shadows will not render if distance from camera is too long.
+- New maps 140x140, 160x160, 180x180 and 200x200 (180 and 200 are not useable for now).
+- Turrets and gates are free of object2
+- Starmans AC, LargeLaser, LRM and Calliope turrets included.
+- New MC2res.dll all mcg pilot names are in.
+- Karls 2 new mechs added: Argus and Mad cat Mk3
+- 2 new pilots from MCG: Falcon and Goblin by ThorC
+- Memory alloc fixed. Maps 180 and 200 are not crushing on exit now.
+- Grizzly mech added.
+- Cicada mech added.
+- All MC1 pilots are in MCO (ThorC).
+- New mechs Grizzly, Cicada (Magic),
+- New mechs Uziel, Hellfire (Karl)
+- Mobile Turret Control vehicle and Mobile AC Turet (Starman)
+- New mech Crossbow (Magic)
+- New mech Sunder (Karl)
+- New mech Champion (Karl - model by RavenIIC)
+- New mech Thanatos (Karl)
+- ABL command setobjectivestatus fixed.
+Syntax:
+setobjectivestatus(objective_number, newObjectiveStatus)
+
+objective_number - mission objective number.
+newObjectiveStatus can be:
+0 - undetermined,
+1 - success,
+2 - failed.
+- New mech Owens (Karl)
+- New MRM turret, MRM popup and camo turets and LRM camo turrets (Karl).
+- New mechs Blood Kite and Naga (Karl)
+- New mech Ranger (Magic)
+- Redesigned old Mist Lynx mech (Karl)
+- Mouse wheel incorporated in all MCO list boxes
+- New Warhammer 2C mech model (Karl)
+- Warhawk model improved (10 weapon nodes - Magic)
+- CauldronBorn - model change 12 weapon nodes (magic)
+- Orion - better model 9 weapon nodes - better animation (magic)
+- Orion2c - better/changed model 9 weapon nodes - better animation (magic)
+- Awesome - better model 9 weapon nodes - better animation (magic)
+- Centurion - better model 6 weapon nodes (magic)
+- Intruder - 9 weapon nodes (magic)
+- Grizzly - 8 weapon nodes (magic)
+- New mech Zeus MK2 - 9 weapon nodes (magic)
+- Better Nova mech model - 7 weapon nodes (magic)
+- 4 new tanks: JEdgar, Saracen, Savannah, Striker (karl)
+- Bug fixed - vehicle weapon nodes only 2 were active, if created more then 2 in ASE/TGL wehicle fire only first salvo and never again.
+All 4 nodes are now active and OK.
+- new Elemental as mech (Karl)
+- 2 types of Forest-walls added to the game (karl)
+- new building Solar Collector (magic)
+- max waypoints changed to 32
+- Repair Truck can recharge from resource buildings and resource trucks.
+- Repir Bay is not destroyed when empty.
+- Kodiak - better model 10 weapon nodes (magic)
+
+
+Effect:
+Set oobjective status from main mission abl file.
+
+What's NEW in editor:
+- Fixed many errors: dynamic memory allocation version conflict.
+- New load for mechs, vehicles and buildings. It will load old MC2 way as well.
+- Rollins resize bug fix implemented.
+- Fixed 600 objects limit for buildings.
+- Max number of pilots doubled to 128.
+- More skys added to editor up to 36.
+- Editor mem alloc changed.

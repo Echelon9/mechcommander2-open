@@ -1,0 +1,59 @@
+MECHCOMMANDER OMNITECH : SOFTWARE LICENSE AGREEMENT
+
+IMPORTANT - READ CAREFULLY: 
+
+The accompanying program (which includes computer software program, the media and related documentation electronic form) is licensed to you on the terms set forth below, which constitutes a legal agreement between you and the MECHCOMMANDER OMNITECH Team. Please read this license carefully before installing and/or using the program.  By installing or otherwise using the program, you agree to be legally bound by the terms of this agreement with the MECHCOMMANDER OMNITECH Team. If you do not agree to the terms of this license, do not download, copy, install or use the program, and delete the program and all related files from your computer.
+
+The program is protected by the international copyright treaties and conventions and other laws.  The program is licensed (not sold !) to you, and this agreement confers no title or ownership to the program or any copy thereof.
+
+YOU SHALL NOT:
+
+* Sell, rent, lease, or use the program or any part thereof in any commercial context.
+* Remove, disable or circumvent any proprietary notices or labels contained on or within the Program.
+
+WARRANTY:
+
+You expressly acknowledge and agree that use of the program is at your sole risk.  The program and any related documentation or materials are provided "AS IS" and without warranty of any kind.
+
+Under no circumstances including negligence, shall the MECHCOMMANDER OMNITECH Team be liable for special, incidental or consequential damages resulting from possession, use or malfunction of the program, including damages to property, loss of goodwill, computer failure or malfunction and the like, arising out of the downloading, copying or use of the program or related files and materials, even if MECHCOMMANDER OMNITECH Team has been advised of the possibility of such damages.
+
+INDEMNITY:
+
+You agree to indemnify, defend and hold the MECHCOMMANDER OMNITECH Team harmless from all damages, losses and expenses arising directly or indirectly from your acts and omissions to act in using the program pursuant to the terms of this agreement.
+
+MISCELLANEOUS:
+
+This software is not affiliated with MechCommander©, Mechcommander2©, Microsoft Corporation or WizKids LLC. MechCommander (or Battletech) and all logos, item names, and content not created by the Mechcommander Omnitech Team are copyrights of respective owners and are being used here on a non-profit basis. All rights reserved. The content from the shared source release from Microsoft that is is still embedded into this software unchanged, is protected under the EULA released from Microsoft for the shared source release (see below).
+
+WizKids LLC and Microsoft has sole ownership of the names, logo, artwork, marks, photographs, sounds, audio, video and/or any proprietary material used in connection with the gameClassic BattleTech. All WizKids characters, names, logos, and distinctive likenesses are property of WizKids, LLC. BattleTech, BattleMech, Mechand WizKids are trademarks of WizKids, LLC.MechWarrior and Mech are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries.
+
+This is a work of fiction. All of the characters and events portrayed in this game are fictional.  Any resemblance to real persons, living or dead, or actual events, is purely coincidental.
+
+Furthermore, everything from the mechcommander 2 released source still included in this software package is protected under the restrictions set from microsoft with the release. These restrictions can be read in the official EULA for the SourceCodeRelease which can be found below :
+
+Shared Source Limited Permissive License for use of MechCommander® 2
+
+This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.
+
+1. Definitions
+The terms “reproduce,” “reproduction” and “distribution” have the same meaning here as under U.S. copyright law.
+“You” means the licensee of the software.
+“Licensed patents” means any Microsoft patent claims which read directly on the software as distributed by Microsoft under this license. 
+
+2. Grant of Rights
+(A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, Microsoft grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce the software, prepare derivative works of the software and distribute the software or any derivative works that you create.
+
+(B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, Microsoft grants you a non-exclusive, worldwide, royalty-free patent license under licensed patents to make, have made, use, practice, sell, and offer for sale, and/or otherwise dispose of the software or derivative works of the software.
+
+3. Conditions and Limitations
+(A) Limitation on Commercial Distribution- Notwithstanding the rights granted in section 2(A) above, you are not granted any rights to commercially distribute any artwork from the software (“Art Assets”) in any derivative work or otherwise.  Microsoft grants you a limited, non-exclusive, worldwide, royalty-free copyright license to use, reproduce and distribute the Art Assets on a non-commercial basis only.
+
+(B) No Trademark License- This license does not grant you any rights to use Microsoft’s name, logo, or trademarks.
+
+(C) If you begin patent litigation against Microsoft over patents that you think may apply to the software (including a cross-claim or counterclaim in a lawsuit), your license to the software ends automatically.
+
+(D) If you distribute copies of the software or derivative works, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
+
+(E) If you distribute the software or derivative works in source code form you may do so only under this license (i.e., you must include a complete copy of this license with your distribution), and if you distribute the software or derivative works in compiled or object code form you may only do so under a license that complies with this license.
+
+(F) The software is licensed “as-is.” You bear the risk of using it. Microsoft gives no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, Microsoft excludes the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
