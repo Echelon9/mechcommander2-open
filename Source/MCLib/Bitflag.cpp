@@ -92,7 +92,7 @@ void BitFlag::destroy (void)
 // This sets location to bits
 void BitFlag::setFlag (unsigned long r, unsigned long c)
 {
-	if ((r < 0) || (r >= rows) || (c < 0) || (c > columns))
+	if ((r >= rows) || (c > columns))
 		return;
 		
 	//-------------------------------
@@ -117,7 +117,7 @@ void BitFlag::setGroup (unsigned long r, unsigned long c, unsigned long length)
 {
 	if (length)
 	{
-		if ((r < 0) || (r >= rows) || (c < 0) || (c > columns) || ((r*c+length) >= (rows*columns)))
+		if ((r >= rows) || (c > columns) || ((r*c+length) >= (rows*columns)))
 			return;
 		
 		//-------------------------------
@@ -201,7 +201,7 @@ void BitFlag::setGroup (unsigned long r, unsigned long c, unsigned long length)
 //------------------------------------------------------------------------
 unsigned char BitFlag::getFlag (unsigned long r, unsigned long c)
 {
-	if ((r < 0) || (r >= rows) || (c < 0) || (c > columns))
+	if ((r >= rows) || (c > columns))
 		return 0;
 		
 	//------------------------------------
@@ -384,7 +384,7 @@ void ByteFlag::destroy (void)
 // This sets location to bits
 void ByteFlag::setFlag (unsigned long r, unsigned long c)
 {
-	if ((r < 0) || (r >= rows) || (c < 0) || (c > columns))
+	if ((r >= rows) || (c > columns))
 		return;
 		
 	//-------------------------------
@@ -406,7 +406,7 @@ void ByteFlag::setGroup (unsigned long r, unsigned long c, unsigned long length)
 {
 	if (length)
 	{
-		if ((r < 0) || (r >= rows) || (c < 0) || (c > columns) || ((r*c+length) >= (rows*columns)))
+		if ((r >= rows) || (c > columns) || ((r*c+length) >= (rows*columns)))
 			return;
 		
 		//-------------------------------
@@ -427,7 +427,7 @@ void ByteFlag::setGroup (unsigned long r, unsigned long c, unsigned long length)
 //------------------------------------------------------------------------
 unsigned char ByteFlag::getFlag (unsigned long r, unsigned long c)
 {
-	if ((r < 0) || (r >= rows) || (c < 0) || (c > columns))
+	if ((r >= rows) || (c > columns))
 		return 0;
 		
 	//------------------------------------
