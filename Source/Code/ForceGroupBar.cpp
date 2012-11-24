@@ -141,7 +141,7 @@ void ForceGroupBar::update( )
 	bool bCommand = useLeftRightMouseProfile ? userInput->isRightClick() : userInput->isLeftClick();
 	bool shiftDn = userInput->getKeyDown( KEY_LSHIFT ) ? true : false;
 	bool bCamera = useLeftRightMouseProfile ? (userInput->isLeftDoubleClick()) : (userInput->isRightClick() && !userInput->isRightDrag());
-	bool bForceGroup = useLeftRightMouseProfile ? (userInput->isLeftDoubleClick()) : userInput->isLeftDoubleClick();
+	bool bForceGroup = useLeftRightMouseProfile ? userInput->isRightDoubleClick() : userInput->isLeftDoubleClick();
 	
 	if ( bCamera )
 		bSelect = 0;
