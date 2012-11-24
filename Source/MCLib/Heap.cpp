@@ -1593,7 +1593,7 @@ void UserHeap::walkHeap (bool printIt, bool skipAllocated)
 			#endif
 
 			#else
-			sprintf(errMessage, "%s block at DS:%08X, size = %u \n",
+			sprintf(errMessage, "%s block at DS:%p, size = %u \n",
 					(allocated)?"Allocated":"Free",walker,(walker->blockSize & ~1));
 
 			#ifndef _CONSOLE
@@ -2089,7 +2089,7 @@ void HeapList::dumpLog (void)
 				}
 			}
 			
-			sprintf(msg,"HeapSize: %d     HeapStart: %08X",currentHeap->tSize(),currentHeap->getHeapPtr());
+			sprintf(msg,"HeapSize: %d     HeapStart: %p",currentHeap->tSize(),currentHeap->getHeapPtr());
 			logFile.writeLine(msg);
 
 			totalCommit += currentHeap->tSize();
