@@ -2618,7 +2618,7 @@ void Mover::updateDebugWindow (GameDebugWindow* debugWindow) {
 					bodyState[body[i].damageState]);
 				debugWindow->print(s);
 			}
-			for (i = numArmorLocations; i < numArmorLocations; i++) {
+			for (i = 0; i < numArmorLocations; i++) {
 				sprintf(s, "%s AR:%02d(%02d)",
 					locationStrings[i],
 					armor[i].curArmor,
