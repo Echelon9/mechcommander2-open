@@ -1214,7 +1214,7 @@ void Debugger::processCommand (long commandId, char* strParam1, long numParam1, 
 			sprintf(message, "%d static vars, %d bytes, %d largest",
 					moduleInfo.numStaticVars,
 					moduleInfo.totalSizeStaticVars,
-					moduleInfo.largestStaticVar);
+					moduleInfo.largestStaticVar.size);
 			print(message);
 			}
 			break;
