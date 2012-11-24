@@ -1760,8 +1760,8 @@ void GameObject::setPosition (const Stuff::Vector3D& newPosition, bool calcPosit
 		d_vertexNum = tileRow * Terrain::realVerticesMapSide + tileCol;
 	}
 
-	Assert((cellPositionRow >= 0) && (cellPositionRow < GameMap->getHeight()), 0, " Object moved off map ");
-	Assert((cellPositionCol >= 0) && (cellPositionCol < GameMap->getWidth()), 0, " Object moved off map ");
+	Assert((cellPositionRow < GameMap->getHeight()), 0, " Object moved off map ");
+	Assert((cellPositionCol < GameMap->getWidth()), 0, " Object moved off map ");
 }
 
 //---------------------------------------------------------------------------
