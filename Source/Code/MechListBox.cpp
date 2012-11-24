@@ -684,8 +684,7 @@ void MechListBoxItem::update()
 			animations[bOrange][i].setState( aAnimGroup::PRESSED );
 
 		if ( userInput->isLeftClick() && isInside )
-	//		setMech();
-		MechPurchaseScreen::instance()->setSelectedMech(pMech);//magic 13022011
+			MechPurchaseScreen::instance()->setSelectedMech(pMech);
 		
 		if ( userInput->isLeftDrag() &&
 			pointInside( userInput->getMouseDragX(), userInput->getMouseDragY() ) )
