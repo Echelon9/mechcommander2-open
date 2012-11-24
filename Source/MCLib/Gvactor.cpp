@@ -1665,11 +1665,10 @@ bool GVAppearance::recalcBounds (void)
 				maxBox.y = appearType->typeLowerRight.z;
 				maxBox.z = appearType->typeLowerRight.y;
 				
-				if (rotation != 0.0f)
+				if (rotation != 0.0f) {
 					Rotate(minBox,-rotation);
- 	
-				if (rotation != 0.0f)
 					Rotate(maxBox,-rotation);
+				}
 					
  				boxCoords[0].x = position.x + minBox.x;
 				boxCoords[0].y = position.y + minBox.y;
