@@ -946,7 +946,7 @@ void aAnimButton::update( const aAnimation& animData )
 	}
 	
 	float fXcaleX = animData.getScaleX();
-	float fScaleY = animData.getScaleX();
+	float fScaleY = animData.getScaleY();
 
 	if ( fXcaleX != 1.0 && fScaleY != 1.0 )
 	{
