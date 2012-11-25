@@ -100,7 +100,7 @@ bool
 	Test_Assumption(b == Vector3D(c.x/d.x,c.y/d.y,c.z/d.z));
 
 	AffineMatrix4D
-		m(true);
+		m(1);
 	EulerAngles
 		r(Pi_Over_4,0.0f,0.0f);
 	m.BuildRotation(r);

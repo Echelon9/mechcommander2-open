@@ -8,7 +8,7 @@
 #include "StuffHeaders.hpp"
 
 const LinearMatrix4D
-	LinearMatrix4D::Identity(true);
+	LinearMatrix4D::Identity(1);
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //

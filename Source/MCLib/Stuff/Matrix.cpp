@@ -8,7 +8,7 @@
 #include "StuffHeaders.hpp"
 
 const Matrix4D
-	Matrix4D::Identity(true);
+	Matrix4D::Identity(1);
 
 //
 //###########################################################################

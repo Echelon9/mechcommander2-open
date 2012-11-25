@@ -376,7 +376,7 @@ void
 	//
 	if (spec->m_alignYUsingVelocity)
 	{
-		Stuff::LinearMatrix4D basis(true);
+		Stuff::LinearMatrix4D basis(1);
 		basis.AlignLocalAxisToWorldVector(
 			particle->m_localLinearVelocity,
 			Stuff::Y_Axis,
@@ -560,7 +560,7 @@ bool
 	//
 	if (spec->m_alignYUsingVelocity)
 	{
-		Stuff::LinearMatrix4D basis(true);
+		Stuff::LinearMatrix4D basis(1);
 		basis.AlignLocalAxisToWorldVector(
 			particle->m_localLinearVelocity,
 			Stuff::Y_Axis,

@@ -18,8 +18,8 @@ DWORD
 	gosFX::Profile_Count;
 
 static Stuff::LinearMatrix4D
-	Effect_Into_Motion_data(true),
-	Effect_Against_Motion_data(true);
+	Effect_Into_Motion_data(1),
+	Effect_Against_Motion_data(1);
 const Stuff::LinearMatrix4D&
 	gosFX::Effect_Into_Motion = Effect_Into_Motion_data;
 const Stuff::LinearMatrix4D&

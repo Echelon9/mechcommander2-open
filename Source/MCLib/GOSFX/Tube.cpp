@@ -1066,7 +1066,7 @@ bool
 	// Now build the template to new local space matrix
 	//-------------------------------------------------
 	//
-	Stuff::AffineMatrix4D template_to_profile(true);
+	Stuff::AffineMatrix4D template_to_profile(1);
 	template_to_profile(0,0) = scale;
 	template_to_profile(1,1) = scale;
 	template_to_profile(2,2) = scale;
@@ -1221,7 +1221,7 @@ void gosFX::Tube::Draw(DrawInfo *info)
 				//
 				Stuff::Vector3D direction;
 				direction.Subtract(camera_in_profile, offset_in_profile);
-				Stuff::LinearMatrix4D template_rotation(true);
+				Stuff::LinearMatrix4D template_rotation(1);
 				template_rotation.AlignLocalAxisToWorldVector(
 					direction,
 					Stuff::Z_Axis,

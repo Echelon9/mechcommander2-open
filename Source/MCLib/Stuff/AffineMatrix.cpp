@@ -8,7 +8,7 @@
 #include "StuffHeaders.hpp"
 
 const AffineMatrix4D
-	AffineMatrix4D::Identity(true);
+	AffineMatrix4D::Identity(1);
 
 //
 //###########################################################################
