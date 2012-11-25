@@ -212,8 +212,8 @@ void	ComponentListItem::update()
 	if ( state == aListItem::SELECTED ) 
 	{
 		if ( (userInput->isLeftClick() && isInside)
-			|| ( animations[0].getState() != aAnimGroup::PRESSED )
-			&& ComponentIconListBox::s_instance->pointInside( userInput->getMouseX(), userInput->getMouseY() ))
+			|| ( ( animations[0].getState() != aAnimGroup::PRESSED )
+			&& ComponentIconListBox::s_instance->pointInside( userInput->getMouseX(), userInput->getMouseY() ) ) )
 		{
 			setComponent();
 

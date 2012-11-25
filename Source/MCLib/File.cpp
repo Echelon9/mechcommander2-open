@@ -1768,7 +1768,7 @@ unsigned long File::getLength (void)
 	{
 		length = physicalLength;
 	}
-	else if (isOpen() && ((length == 0) || (fileMode > READ) && !inRAM))
+	else if (isOpen() && ((length == 0) || ((fileMode > READ) && !inRAM)))
 	{
 		/* _fstat() was being used to get the length of the file, but it was wrong. It was
 		   not giving the *logical* size, which is what we want. */

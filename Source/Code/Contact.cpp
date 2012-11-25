@@ -272,7 +272,7 @@ long SensorSystem::calcContactStatus (MoverPtr mover) {
 	//-------------------------------------------------------------
 	// Should be properly set when active probes are implemented...
 	long newContactStatus = CONTACT_NONE;
-	if (!notShutdown || (range == 0.0) && !broken) 
+	if ( (!notShutdown || (range == 0.0)) && !broken) 
 	{
 		if (owner->lineOfSight(mover) && !mover->isDisabled())
 			newContactStatus = CONTACT_VISUAL;

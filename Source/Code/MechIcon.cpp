@@ -1801,7 +1801,7 @@ void ForceGroupIcon::drawDeathEffect()
 				long color = 0xff000000;
 				if ( deathAnimationTime < .4 
 					|| (deathAnimationTime > .8 && deathAnimationTime < 1.2)
-					|| deathAnimationTime > 1.6 && deathAnimationTime < 2.0)
+					|| (deathAnimationTime > 1.6 && deathAnimationTime < 2.0) )
 				{
 					color = 0xffff0000;
 				}

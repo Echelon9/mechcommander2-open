@@ -213,8 +213,8 @@ void	ComponentPurItem::update()
 	if ( state == aListItem::SELECTED ) 
 	{
 		if ( (userInput->isLeftClick() && isInside)
-			|| ( animations[0].getState() != aAnimGroup::PRESSED )
-			&& ComponentIconPurBox::s_instance->pointInside( userInput->getMouseX(), userInput->getMouseY() ))
+			|| ( ( animations[0].getState() != aAnimGroup::PRESSED )
+			&& ComponentIconPurBox::s_instance->pointInside( userInput->getMouseX(), userInput->getMouseY() ) ) )
 		{
 			setComponent();
 

@@ -1314,8 +1314,8 @@ void aComboBox::update()
 			// lose focus if appropriate
 			else if ( ListBox().isShowing() && 
 				( !pointInside( userInput->getMouseX(), userInput->getMouseY() )
-				|| (  ListBox().pointInside(userInput->getMouseX(), userInput->getMouseY() ) )
-				&& !ListBox().pointInScrollBar(userInput->getMouseX(), userInput->getMouseY()) ) )
+				|| ((  ListBox().pointInside(userInput->getMouseX(), userInput->getMouseY() ) )
+				&& !ListBox().pointInScrollBar(userInput->getMouseX(), userInput->getMouseY()) ) ) )
 			{
 				listBox.showGUIWindow(false);
 				rects[2].showGUIWindow(false);

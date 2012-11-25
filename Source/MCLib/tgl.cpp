@@ -104,8 +104,8 @@ void GetNumberData (char *rawData, char *result)
 	while (	(rawData[endIndex] == '+') ||
 			(rawData[endIndex] == '-') ||
 			(rawData[endIndex] == '.') ||
-			(rawData[endIndex] >= '0') &&
-			(rawData[endIndex] <= '9'))
+			((rawData[endIndex] >= '0') &&
+			(rawData[endIndex] <= '9')))
 	{
 		endIndex++;
 	}
@@ -119,10 +119,10 @@ void GetWordData (char *rawData, char *result)
 {
 	long startIndex = 0;
 	long endIndex = 0;
-	while (	(rawData[startIndex] < 'A') ||
-			(rawData[startIndex] > 'Z') &&
-			(rawData[startIndex] < 'a') ||
-			(rawData[startIndex] > 'z'))
+	while (	((rawData[startIndex] < 'A') ||
+			(rawData[startIndex] > 'Z')) &&
+			((rawData[startIndex] < 'a') ||
+			(rawData[startIndex] > 'z')))
 	{
 		startIndex++;
 	}
