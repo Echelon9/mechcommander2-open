@@ -726,7 +726,7 @@ void
 					}
 					if(
 						(*lightMapUVs)[k][0] < -1.5f || (*lightMapUVs)[k][0] > 1.5f ||
-						((*lightMapUVs)[k][1] < -1.5f && (*lightMapUVs)[k][1] > 1.5f)
+						(*lightMapUVs)[k][1] < -1.5f && (*lightMapUVs)[k][1] > 1.5f
 
 					) 
 					{
