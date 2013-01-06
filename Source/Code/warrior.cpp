@@ -6706,7 +6706,7 @@ long MechWarrior::orderRecover (long origin, GameObjectPtr target, unsigned long
 long MechWarrior::orderGetFixed (long origin, GameObjectPtr target, unsigned long params)
 {
 
-	if ((!target || target->getObjectClass() != TREEBUILDING) && target->getRefitPoints() <= 0.0)
+	if (!target || (target->getObjectClass() != TREEBUILDING && target->getRefitPoints() <= 0.0))
 		return(TACORDER_SUCCESS);
 #ifdef USE_BUILDINGS
 	if ((getVehicle()->getObjectClass() == BATTLEMECH && ((TreeBuildingPtr) target)->mechBay == false) ||
