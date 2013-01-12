@@ -737,10 +737,16 @@ long MasterComponent::saveMasterList (char* fileName, long listSize, float baseS
 	sprintf(dataLine,"MasterLegActuatorID = %d,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",legActuatorID);
 	componentFile.writeLine(dataLine);
 
-	sprintf(dataLine,"MasterClanAntiMissileSystemID = 115,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",clanAntiMissileSystemID);
+	// This is a placeholder feature that was never completed by Microsoft.
+	// If coders ever add this feature, proposed line is below in comment.
+	// sprintf(dataLine,"MasterClanAntiMissileSystemID = %d,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",clanAntiMissileSystemID);
+	sprintf(dataLine,"MasterClanAntiMissileSystemID = 115,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,");
 	componentFile.writeLine(dataLine);
 
-	sprintf(dataLine,"MasterInnerSphereAntiMissileSystemID = 106,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",innerSphereAntiMissileSystemID);
+	// This is a placeholder feature that was never completed by Microsoft.
+	// If coders ever add this feature, proposed line is below in comment.
+	// sprintf(dataLine,"MasterInnerSphereAntiMissileSystemID = %d,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",innerSphereAntiMissileSystemID);
+	sprintf(dataLine,"MasterInnerSphereAntiMissileSystemID = 106,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,");
 	componentFile.writeLine(dataLine);
 	
 	sprintf(dataLine,"//,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Weapon,Effect,Ammo,Flag,1 = streak 2 = inferno");
