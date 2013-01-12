@@ -1740,7 +1740,7 @@ char* File::getFilename (void)
 //---------------------------------------------------------------------------
 time_t File::getFileMTime (void)
 {
-	time_t mTime;
+	time_t mTime = 0;
 
 	if (isOpen())
 	{
