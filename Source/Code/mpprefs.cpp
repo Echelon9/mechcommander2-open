@@ -317,7 +317,7 @@ void MPPrefs::update()
 		MPlayer->sendPlayerInsignia( (char*)pName, pData, size );
 		MPlayer->insigniaList[MPlayer->commanderID] = 1;
 
-		delete pData;
+		delete [] pData;
 	}
 
 	if ( userInput->isLeftClick() && !bExpanded )
