@@ -160,7 +160,7 @@ void MechBayScreen::init(FitIniFile* file)
 	textObjects[15].setText( "-5" );
 	textObjects[16].setText( "+5" );
 	//magic 02062012 begin
-	textObjects[17].setText( "RESOURCE PIONTS" );
+	textObjects[17].setText( "RESOURCE POINTS" );
 	textObjects[18].setText( "" );
 	textObjects[19].setText( "-2000" );
 	textObjects[20].setText( "+2000" );
